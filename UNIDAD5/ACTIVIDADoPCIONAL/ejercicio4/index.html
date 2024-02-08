@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let dia=parseInt(prompt("Dia"));
+        let mes=parseInt(prompt("Mes"));
+        let año=parseInt(prompt("Año"));
+
+        if(mes>=1 && mes<=12 && año>0){
+            let diaMes=[31,29,31,30,31,30,31,31,30,31,30,31];
+            let nombreMes=["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+            if(dia<=diaMes[mes-1]){
+                alert(dia+" de "+nombreMes[mes-1]+" de "+año);
+            }else{
+                alert("no es correcta");
+            }
+        }else{
+            alert("No es correcta");
+        }
+
+
+        
+
+
+    </script>
+</body>
+</html>

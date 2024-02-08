@@ -1,0 +1,137 @@
+/*en comun*/
+/*a toda la pagina*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+iframe{
+    width: 500px;
+    height: 400px;
+}
+/*grid*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 20% auto 10%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    grid-template-areas: /*posicion para las cajas*/
+    "header header"
+    "box1 box1"
+    "box2 box3"
+    "footer footer";
+}
+header{
+    grid-area: header;
+    background:#333; 
+    text-align: center;
+}
+.box1{
+    grid-area: box1;
+    padding-top: 3%;
+    padding-left: 25%;
+    height: 25%;
+
+}
+.box2{
+    grid-area: box2;
+    text-align: left;
+    padding: 9% 0 5% 25%;
+}
+.box3{
+    grid-area: box3;
+    
+    text-align: left;
+    padding: 9% 0 5% 10%;
+}
+footer{
+    grid-area: footer;
+    background:#333;
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+    
+}
+/*estilo tabla*/
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 2px solid rgb(201, 197, 197);
+    padding: 5px;
+}
+
+table tr.fila:hover{
+   background-color: rgb(209, 207, 207);
+}
+table tr.fila2:hover{
+    background-color: rgb(209, 207, 207);
+}
+
+th{
+    background: rgb(179, 177, 177);
+}
+/*estilo nav menu*/
+nav>a:hover{
+    color: greenyellow;
+}
+
+nav{
+    padding-top: 3%;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    
+}
+/*media para moviles*/
+@media (max-width:900px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 20% auto 10%;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        grid-template-areas: 
+        "header header"
+        "box1 box1"
+        "box2 box3"
+        "footer footer";
+    }
+    header{
+        grid-area: header;
+        background:#333; 
+        text-align: center;
+    }
+    .box1{
+        grid-area: box1;
+       
+        padding-left: 25%;
+        height: 25%;
+    
+    }
+    .box2{
+        grid-area: box2;
+        
+        text-align: left;
+        padding: 5% 0 5% 10%;
+    }
+    .box3{
+        display: none;
+    }
+    footer{
+        grid-area: footer;
+        background:#333;
+       
+        text-align: center;
+        color: white;
+        
+    }
+    table{
+        min-width: 900px;
+    }
+    
+}

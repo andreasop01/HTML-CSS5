@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.menu1{
+    background: rgb(58, 58, 58);
+    text-align: right;
+    width: 100%;
+}
+.menu1 a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    margin: 3%;
+}
+
+
+.menu2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    width: 100%;
+    background: white;
+}
+.menu2 a{
+    color: grey;
+    text-decoration: none;
+}
+.menu3{
+    width: 50%;
+    padding: 2%;
+    text-align: right;
+}
+.menu3 a{
+    margin: 3%;
+}
+.menu2 img{
+   margin: 1% 2%;
+    width: 60px;
+}
+
+/*Festival*/
+
+.festival{
+    background: url(../img/fondo.png) 0% 6%;
+    padding: 9% 8% 5% 5%;
+    background-size: cover;
+}
+
+h1{
+    font-size:2em ;
+    color: rgb(46, 46, 229);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: festival;
+    src: url(../font/Cocogoose.otf);
+}
+h1+p{
+    font-size: 3em;
+    color: orange;
+    font-family: festival;
+    line-height: 0.9em;
+    padding: 2% 0;
+}
+p+div{
+    border: 4px solid white;
+    width: 65%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+}
+div+p{
+    font-family: festival;
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 1% 0;
+}
+
+.cuentaRegresiva{
+    background: black;
+    text-align: center;
+    height: 10%;
+}
+
+.cuentaRegresiva>p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+/*PROGRAMA PRINCIPAL*/
+
+.programa{
+    background: url(../img/fill-bg.png) rgb(60, 59, 59);
+    height: 100%;
+}
+.programa>p{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7% 7% 0 7%;
+}
+p+hr{
+   width: 3%;
+   border: 1px solid orange;
+   margin: 1% auto 3% auto;
+
+}
+.programa2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 3% 3%;
+    margin: 0% 6%;
+}
+
+.programa2>div{
+    background: rgba(255, 255, 255, 0.208);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 6% 6%;
+    padding: 8%;
+    height: 100%;
+}
+
+.titulo{
+    color: orange;
+    font-weight: bolder;
+}
+p>a{
+    color: white;
+    text-decoration: underline;
+    font-size: 0.5em;
+    font-weight: lighter;
+}
+.programa2+p{
+    padding: 2% 0% 4% 0%;
+}
+
+/*Participantes*/
+.participantes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 2px;
+
+
+}
+
+ .participantes>div{
+    display: flex;
+    padding: 2% 4% 2% 1%;
+ }
+.tomaran{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2% auto 1% auto;
+}
+.participantes>div>img{
+    width: 100px;
+    height: 100px;
+    margin: 0% 2% 1% 0%;
+}
+
+.participantes>div>div>hr{
+    border: 1px rgb(209, 209, 209) solid;
+    margin: 3% 3% 3% 0%;
+    width: 7%;
+}
+p>i{
+    color: orange;
+}
+
+/*Patrocinadores*/
+.patrocinadores{
+    background: rgb(48, 48, 48);
+
+}
+.patrocinadores>div{
+    padding:0% 0% 3% 10%;
+}
+
+.patrocinadores>div>img{
+    width: 17%;
+    height: 17%;
+}
+
+.patro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2% auto 1% auto;
+    padding-top:2% ;
+    color: white;
+}
+
+[alt="mozilla"]{
+    margin-bottom: 3%;
+}
+[alt="toko"]{
+    margin-bottom: 3%;
+    filter: grayscale(100%);
+}
+[alt="nave"]{
+   filter: grayscale(100%);
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+footer>a>img{
+    margin: 10% 5% 0% 60% ;
+    width: 50%;
+    height: 80%;
+}
+footer>p{
+    margin: 4% 0% 4% 6%;
+}

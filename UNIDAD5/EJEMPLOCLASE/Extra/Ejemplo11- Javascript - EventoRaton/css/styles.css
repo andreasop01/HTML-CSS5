@@ -1,0 +1,16 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+#box {
+	width: 200px;
+	height: 200px;
+	background-color: lightblue;
+	margin: 50px auto;
+	cursor: pointer;
+}

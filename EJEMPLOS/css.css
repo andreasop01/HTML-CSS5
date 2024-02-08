@@ -1,0 +1,49 @@
+html{
+    height: 100%;
+}
+
+
+ul{
+    list-style: url(../EJEMPLOS/imagenes/Captura\ de\ Pantalla\ 2022-10-19\ a\ la\(s\)\ 19.31.31.png)1%;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 10px;
+    height: 100%;
+
+    grid-template-areas: 
+    "box1 box1 box2"
+    "box3 box4 box5";
+}
+
+.box1{
+    grid-area: box1;
+    border: solid black;
+    background: url(imagenes/Captura\ de\ Pantalla\ 2022-10-19\ a\ la\(s\)\ 19.31.31.png);
+    background-size: cover;
+    text-align: center;
+}
+.box2{
+    grid-area: box2;
+    border: solid black;
+    background: blue;
+}
+.box3{
+    grid-area: box3;
+    border: solid black;
+}
+.box4{
+    grid-area: box4;
+    border: solid black;
+}
+.box5{
+    grid-area: box5;
+    border: solid black;
+}
+
+h1:hover{
+    color: aqua;
+}

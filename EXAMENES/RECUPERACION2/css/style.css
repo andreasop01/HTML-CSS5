@@ -1,0 +1,271 @@
+/*en comun de la pagina*/
+*{
+    box-sizing: border-box;
+    margin: 0 4%;
+    padding: 0;
+}
+hr{
+    margin: 0;
+}
+html{
+    height: 100%;
+}
+img{
+    width: 100%;
+}
+body{
+    height: 100%;
+    background: rgb(219, 219, 219);
+}
+/*estilos blanco y negro imagenes*/
+
+.box1:hover{
+    filter: grayscale(100%);
+}
+.box2:hover{
+    filter: grayscale(100%);
+}
+.box3:hover{
+    filter: grayscale(100%);
+}
+.box4:hover{
+    filter: grayscale(100%);
+}
+.box5:hover{
+    filter: grayscale(100%);
+}
+.box6:hover{
+    filter: grayscale(100%);
+}
+.box7:hover{
+    filter: grayscale(100%);
+}
+.box8:hover{
+    filter: grayscale(100%);
+}
+.box9:hover{
+    filter: grayscale(100%);
+}
+/*head*/
+.logo{
+    width: 25%;
+    height: 25%;
+    padding: 3%;
+}
+.flexMenu{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+   text-align: right;
+    width: 70%;
+}
+nav>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+nav>a{
+    text-decoration: none;
+    font-size: medium;
+    color: grey;
+    
+}
+
+/*estilo watches*/
+.watches{
+    text-align: center;
+    font-size: smaller;
+    font-style: italic;
+    color: gray;
+}
+/*body*/
+/*grid de la pagina*/
+.containerMayor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 1fr 1fr 1fr 100px;
+    gap: 10px;
+    height: auto;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+    "header header header"
+    "watches watches watches"
+    "box1 box2 box3"
+    "box4 box5 box6"
+    "box7 box8 box9 "
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    margin: 0;
+    
+}
+.watches{
+    grid-area: watches;
+    
+}
+.box1{
+    grid-area: box1;
+    
+}
+.box2{
+    grid-area: box2;
+   
+}
+.box3{
+    grid-area: box3;
+    padding-right: 4%;
+}
+.box4{
+    grid-area: box4;
+    
+}
+.box5{
+    grid-area: box5;
+    
+}
+.box6{
+    grid-area: box6;
+    padding-right: 4%;
+    
+}
+.box7{
+    grid-area: box7;
+    
+}
+.box8{
+    grid-area: box8;
+    
+}
+.box9{
+    grid-area: box9;
+    padding-right: 4%;
+}
+
+footer{
+    grid-area: footer;
+    background: #867154;
+}
+
+
+
+/*footer*/
+footer>img{
+    width: 15%;
+    height: 35%;
+}
+footer>*{
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+   
+   
+}
+
+/*media de la pag */
+@media (max-width:1000px) {
+    *{
+        box-sizing: border-box;
+        margin: 0 4%;
+        padding: 0;
+    }
+    html{
+        height: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    body{
+        height: 100%;
+        background: rgb(219, 219, 219);
+    }
+    .containerMayor{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 100px 80px 1fr 1fr 1fr 1fr 1fr 100px;
+        gap: 10px;
+        height: auto;
+        background: white;
+        font-family: Arial, Helvetica, sans-serif;
+        grid-template-areas: 
+        "header header"
+        "watches watches"
+        "box1 box2"
+        "box3 box4"
+        "box5 box6"
+        "box7 box8"
+        "box9 zzz"
+        "footer footer";
+    }
+    
+    header{
+        grid-area: header;
+
+        
+    }
+    .watches{
+        grid-area: watches;
+        
+    }
+    .box1{
+        grid-area: box1;
+        
+    }
+    .box2{
+        grid-area: box2;
+       
+    }
+    .box3{
+        grid-area: box3;
+    
+    }
+    .box4{
+        grid-area: box4;
+        
+    }
+    .box5{
+        grid-area: box5;
+        
+    }
+    .box6{
+        grid-area: box6;
+     
+        
+    }
+    .box7{
+        grid-area: box7;
+        
+    }
+    .box8{
+        grid-area: box8;
+        
+    }
+    .box9{
+        grid-area: box9;
+        
+    }
+    
+    footer{
+        grid-area: footer;
+        background: #867154;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+    nav>*{
+        margin: 0 auto;
+    }
+}

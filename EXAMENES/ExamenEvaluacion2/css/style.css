@@ -1,0 +1,205 @@
+/*a toda la pagina*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: sans-serif;
+    size: 100%;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*estilos efectos*/
+.menu a:hover{
+    color: #FF9500;
+    
+}
+.hrazul{
+    border: solid #004080;
+}
+
+a img:hover{
+    filter: drop-shadow( 5px 5px 10px #000 );
+}
+
+.hrnaranja{
+    border: solid orange;
+}
+
+.enviar{
+    background: #004080;
+    color: white;
+}
+.container2 div a img{
+    width: 100%;
+}
+/*efectos */
+.container1  a:hover{
+    text-decoration: none;
+    color: #004080;
+}
+.container1 img:hover{
+    filter: drop-shadow( 5px 5px 10px white );
+}
+/*enlaces */
+.container1 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.containerFlex{
+    display: flex;
+    flex-direction: row;
+}
+.containerFlex img{
+    width: 100%;
+}
+
+.logo{
+    width: 20%;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+/*menu*/
+.menu{
+    width: 100%;
+    padding: 8% 0 4% 2%;
+}
+.menu a{
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+    font-size:x-large;
+    padding-right: 40px;
+}
+/*
+.flexIzquierdo{
+   display: flex;
+}*/
+.flexIzquierdo {
+    display: flex;
+}
+.container2{
+    height: 100%;
+}
+.container2 div{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100%;
+
+}
+input{
+    border-bottom: solid #FF9500;
+   
+}
+
+/*****************************************/
+/*FOOTER*/
+footer p{
+    padding-top: 4%;
+}
+footer{
+    display: flex;
+}
+.imgfooter{
+    margin-right: 50%;
+}
+
+.flexIzquierdo div{
+    padding: 2%;
+}
+
+.flexIzquierdo p{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+/*****************************************/
+/*MAIN*/
+/*grid del main */
+
+.container1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 25% 12,5% 12,5% 12,5% ;
+    gap: 5px;
+    background: rgb(237, 234, 234);
+
+    grid-template-areas: 
+    "matriculate oferta proyectos"
+    "matriculate erasmus erasmus"
+    "quienes quienes quienes"
+    "carmenta carmenta carmenta";
+}
+
+
+.container1 img{
+   justify-content: center;
+    width: 40%;
+}
+.matriculate{
+    grid-area: matriculate;
+    background: orange;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+   
+}
+.oferta{
+    grid-area: oferta;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+
+}
+.proyectos{
+    grid-area: proyectos;
+    background-color: #FF9500;
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+
+}
+.erasmus{
+    grid-area:erasmus;
+    background: #004080;
+    color: white;
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+.quienes{
+    grid-area: quienes;
+   background: url(../img/ceramica-murales.jpg);
+   font-weight: bolder;
+   font-size: xx-large;
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   padding: 10% 20% 10% 20%;
+}
+.carmenta{
+    grid-area: carmenta;
+    background: black;
+    color: white;
+   text-align: center;
+   padding-top: 2%;
+   padding-bottom: 3%;
+}
+
+
+
+
+

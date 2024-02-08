@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+button{
+    background: rgba(92, 92, 252, 0.176);
+    color: #224bcf;
+    border: white solid 1px;
+    border-radius: 8px;
+    width: 32%;
+    padding: 4%;
+    margin: 3%;
+}
+
+/*stilos*/
+.menu>div:hover{
+    background: #fa1d86;
+    color: white;
+}
+button:hover{
+    background: #224bcf;
+    color: white;
+}
+ul>li>a:hover{
+    color: #fa1d86;
+    padding-left: 10px;
+}
+
+.userFlex>div>a:hover{
+    color: #224bcf;
+    padding-left: 0%;
+}
+
+/*HEADER*/
+.menu{
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background:#224bcf ;
+    padding: 0% 6%;
+    z-index: 10;
+}
+
+header>div>div>a{
+    text-decoration: none;
+    color: white;
+    margin-right:10px ;
+    margin-left: 10px;
+}
+header>div>div{
+    padding: 5% 0%;
+    text-align: center;
+}
+.logo{
+    display: flex;
+   width: 5%;
+   padding: 1% 0%;
+}
+
+.gaplogo{
+    font-size: 2em;
+}
+
+/*CONTAINER 1*/
+h2{
+    font-size: 2.6em;
+    margin-bottom: 4%;
+}
+.container1{
+    display: flex;
+    padding: 5% 6% 0;
+}
+.primeraimg>img{
+    width: 100%;
+}
+.primeraimg{
+    width: 100%;
+}
+.container1 p{
+
+    color: grey;
+}
+.containerBoton{
+    padding: 5% 2%;
+}
+/*CONTAINER2*/
+
+.container2{
+   display: flex;
+   padding: 1% 4%;
+   text-align: center;
+
+}
+.container2>div{
+    margin-right: 2%;
+    border-radius: 8px;
+    background: rgb(239, 238, 238);
+    width: 20%;
+    padding: 3%;
+}
+.container2>div>p{
+    font-weight: bolder;
+}
+/*CONTAINER3*/
+h3{
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+.container3{
+    display: flex;
+    padding: 1% 6%;
+    background: rgb(239, 238, 238);
+
+}
+.container3>div{
+    margin-right: 15%;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: gray;
+    line-height: 30px;
+    margin-left: 15px;
+}
+ul>li{
+    list-style: none;
+}
+
+ 
+/*FOOTER*/
+hr{
+    margin-bottom: 3%;
+}
+footer p a{
+    text-decoration: none;
+    color: #fa1d86;
+}
+footer{
+    background: rgb(239, 238, 238);
+    text-align: center;
+    padding: 2% 6%;
+}
+
+/*++++++++++++++++++++++++++++++++++++++*/
+/*BLOGS*/
+/*CONTAINER 1B*/
+h4{
+    font-size: 1.6em;
+}
+.container1b{
+    background-image: url(../img/heading-bg.png);
+    background-size: cover;
+    padding: 8% 6% 2% 6%;
+}
+.blogs{
+    display: flex;
+}
+.blogs>a{
+    text-decoration: none;
+    color: #fa1d86;
+}
+
+/*CONTAINER 2B*/
+/*GRID BLOG*/
+.container2b{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 15px;
+    padding: 1% 5%;
+
+    grid-template-areas: 
+    "subcon2_1 subcon2_2 subcon2_3"
+    "subcon2_4 subcon2_5 subcon2_6";
+}
+
+.container2b>div>img{
+    width: 100%;
+}
+
+.texto{
+    padding: 4%;
+}
+
+.subcon2_1{
+    grid-area: subcon2_1 ;
+    background: rgb(239, 238, 238);
+}
+
+.subcon2_2{
+
+    grid-area: subcon2_2 ;
+    background: rgb(239, 238, 238);
+}
+.subcon2_3{
+
+    grid-area: subcon2_3 ;
+    background: rgb(239, 238, 238);
+}
+.subcon2_4{
+
+    grid-area: subcon2_4;
+    background: rgb(239, 238, 238);
+}
+.subcon2_5{
+
+    grid-area: subcon2_5;
+    background: rgb(239, 238, 238);
+}
+.subcon2_6{
+
+    grid-area: subcon2_6;
+    background: rgb(239, 238, 238);
+}
+.userFlex{
+    display: flex;
+}
+.userFlex>div{
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.userFlex>div>a{
+    text-decoration: none;
+    color: gray;
+}
+
+/**********************************************/
+/*Contacto*/
+h5{
+    font-size: 1.2em;
+    margin: 1% 0% 0% 0%;
+}
+ /*GRID CONTACTO*/
+ .container1c{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 180px 450px ;
+    padding: 2% 6%;
+    gap: 8px;
+
+    grid-template-areas:
+    "c_1 c_1 c_2 c_2 c_3 c_3"
+    "c_4 c_4 c_4 c_5 c_5 c_5" ;
+
+ }
+ .c_1{
+    grid-area: c_1;
+    padding: 5% 12%;
+    text-align: center;
+ }
+ .c_2{
+    grid-area: c_2;
+    padding: 5% 12%;
+    text-align: center;
+ }
+ .c_3{
+    grid-area: c_3;
+    padding: 5% 12%;
+    text-align: center;
+ }
+ .c_4{
+    grid-area: c_4;
+    padding: 4%;
+   
+ }
+ .c_5{
+    grid-area: c_5;
+ }
+ .cimg{
+    width: 35%;
+    margin: 0 auto;
+    background-color: #224acf42;
+    border-radius: 50%;
+    padding: 13% 4%;
+ }
+ .container1c>div{
+    background: rgb(239, 238, 238);
+    border-radius: 8px;
+ }
+
+ iframe{
+    width: 100%;
+    height: 100%;
+ }
+textarea{
+    border: none;
+    border-radius: 5px;
+    padding: 0% 1%;
+}
+input{
+    width: 98%;
+    padding: 3% 1%;
+    margin: 2% 0%;
+    border: none;
+    border-radius: 5px;
+}

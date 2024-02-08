@@ -1,0 +1,616 @@
+/*general*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*EFECTOS*/
+
+div>a:hover {
+    color: rgb(236, 236, 160);
+}
+
+h1 a:hover{
+    color: white;
+}
+
+textarea:focus, input:focus{
+    border: 3px solid black;
+}
+span{
+    font-weight: lighter;
+}
+
+.imgIndex:hover{
+    filter: grayscale(50%);
+}
+
+/*altura para todo el body*/
+body{
+    height: 100%;
+}
+
+hr{
+    background: rgb(184, 183, 183);
+    height: 3px;
+    margin-bottom: 8px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.hrC{
+    background: rgb(240, 240, 240);
+    height: 3px;
+    margin-bottom: 8px;
+    margin-top: 3%;
+    margin-left: 0;
+}
+
+/*header*/
+
+header{
+    background: url(../img/banner.jpg);
+}
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.menu,.containerHeader h1{
+    width: 50%;
+}
+
+h1{
+    padding-left: 9%;
+    padding-top: 3%;
+}
+h2{
+    font-size: 2em;
+ }
+
+
+h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.menu{
+    padding-top: 3%;
+    padding-left: 24%;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin: 2%;
+    font-size: 1.1em;
+}
+ .blogcafe{
+    padding-top: 20%;
+ }
+ 
+.blogcafe h2, .blogcafe p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.blogcafe p{
+    font-weight: lighter;
+}
+
+/*grid index*/
+
+.body1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px 1fr 1fr 1fr 150px ;
+    gap: 5px;
+
+    grid-template-areas: 
+    "header header"
+    "container1 greatcontainer"
+    "container2 greatcontainer"
+    "container3 greatcontainer"
+    "footer footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.container1{
+    grid-area: container1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container1 h2, .container1 h2,.container1 p, .container1 div{
+    padding-top: 3%;
+    padding-left: 10%;
+}
+.boton1 a{
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 4px;
+    font-weight: bolder;
+}
+.container1 img{
+    width: 100%;
+    padding-left: 10%;
+}
+.container2{
+    grid-area: container2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container2 img{
+    width: 100%;
+    padding-left: 10%;
+}
+.container2 h2, .container2 p, .container2 div{
+    padding-top: 3%;
+    padding-left: 10%;
+}
+.boton2 a{
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 4px;
+    font-weight: bolder;
+}
+.container3{
+    grid-area: container3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container3 img{
+    width: 100%;
+    padding-left: 10%;
+}
+.container3 h2, .container3 p, .container3 div{
+    padding-top: 3%;
+    padding-left: 10%;
+    
+}
+
+.boton3 a{
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 4px;
+    font-weight: bolder;
+}
+.greatcontainer{
+    grid-area: greatcontainer;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-top: 3%;
+}
+
+.great1 h2, .great1 h3, .great1 p{
+    margin-bottom: 1%;
+    padding-top: 3%;
+    padding-right: 10%;
+}
+
+.boton4{
+    text-align: center;
+    background: #a25836;
+    width: 60%;
+    padding: 8px;
+}
+.boton4 a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+.great2 p{
+    margin-bottom: 1%;
+    padding-top: 3%;
+    padding-right: 10%;
+}
+
+.boton5{
+    text-align: center;
+    background: #a25836;
+    width: 60%;
+    padding: 8px;
+}
+.boton5 a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+/*FOOTER*/
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+}
+.menuFooter{
+    padding-top: 3%;
+    padding-left: 24%;
+}
+.menuFooter a{
+    text-decoration: none;
+    color: white;
+    margin: 2%;
+    font-size: 1.1em;
+}
+.menuFooter, .menuFooter h1{
+    width: 50%;
+}
+
+/*+++++++++++++++++++++++++++*/
+/*Nosotros*/
+
+/*Grid de Nosotros*/
+.bodyN{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px 80px auto 150px;
+    gap: 5px;
+
+    grid-template-areas: 
+    "header header"
+    "containerN1 containerN1"
+    "containerN2 containerN3"
+    "footer footer";
+
+}
+
+.containerN1{
+    grid-area: containerN1;
+}
+.containerN1 h3{
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2% ;
+}
+.containerN2{
+    grid-area: containerN2;
+}
+.containerN2 img{
+    width: 100%;
+    padding-left:10%;
+    padding-right: 2%;
+}
+.containerN3{
+    grid-area: containerN3;
+    line-height: 30px;
+    color: grey;
+    padding: 4% 4% 2% 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*+++++++++++++++++++++++++++++*/
+/*ENTRADA*/
+
+h4{
+    font-size: 2em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.entrada1 img{
+    width: 100%;
+    padding: 4% 10% 4% 10%;
+}
+.entrada1 h4{
+    padding-top: 3%;
+}
+.entrada1 p{
+    padding: 0 10% 1% 10%;
+    color: gray;
+    line-height: 30px;
+}
+
+.bodyE{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px auto 150px;
+    gap: 5px;
+
+    grid-template-areas: 
+    "header"
+    "entrada1"
+    "footer";
+}
+
+.entrada1{
+    grid-area: entrada1;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++*/
+/*CURSOS*/
+.bodyC{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 40px 1fr 1fr 1fr 150px;
+    gap: 5px;
+
+    grid-template-areas: 
+    "header"
+    "title1"
+    "containerC1"
+    "containerC2"
+    "containerC3"
+    "footer";
+}
+
+.title1{
+    grid-area: title1;
+}
+
+.containerC1{
+    grid-area: containerC1;
+    padding: 4% 10% 3% 10%;
+}
+.containerC1 >div{
+    display: flex;
+    justify-content: space-between;
+}
+.tecnica h3{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tecnica{
+    padding-left: 2%;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containerC1 .imgC1 img{
+    width: 100%;
+}
+.p1{
+    color: grey;
+}
+
+.containerC2{
+    grid-area: containerC2;
+    padding: 4% 10% 3% 10%;
+}
+.containerC2 >div{
+    display: flex;
+    justify-content: space-between;
+}
+.containerC2 .imgC2 img{
+    width: 100%;
+}
+.containerC3{
+    grid-area: containerC3;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 10% 3% 10%;
+}
+.containerC3 .imgC3 img{
+    width: 100%;
+}
+
+/**************************************************************************/
+/*CONTACTO*/
+
+.bodyCont{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 40px 1fr 1fr 150px;
+    gap: 5px;
+
+    grid-template-areas: 
+    "header"
+    "tituloCont"
+    "imgCont"
+    "formulario"
+    "footer";
+}
+
+.tituloCont{
+    grid-area: tituloCont;
+    
+}
+
+.imgCont {
+    grid-area: imgCont;
+    position: relative;
+    z-index: 0.1;
+    padding: 0 10% 0 10%;
+}
+.imgCont img{
+    width: 100%;
+}
+
+.formulario{
+    grid-area: formulario;
+    position:relative;
+    z-index: 0.3;
+    width: 75%;
+    left: 150px;
+    bottom: 50px;
+    padding: 3% 5% 0 5%;
+    background: white;
+}
+input,textarea{
+    width: 85%;
+}
+[for="mensaje"]{
+    position: relative;
+    bottom: 150px;
+}
+[type="submit"]{
+    width: 130px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+@media(max-width:850px){
+    /*INDEX*/
+
+    .body1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px auto auto auto auto 140px ;
+        gap: 5px;
+        padding: 0 auto;
+    
+        grid-template-areas: 
+        "header "
+        "container1"
+        "container2" 
+        "container3"
+        "greatcontainer"
+        "footer";
+    }  
+    .containerHeader{
+       display: flex;
+       flex-direction: column;
+      
+    } 
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerHeader h1, .containerHeader div{
+        margin: 0 auto;
+    }
+    .containerHeader h1{
+        text-align: center;
+    }
+
+    .header{
+        grid-area: header;
+        background: url(../img/banner.jpg) cover;
+
+    }
+    
+    .container1{
+        grid-area: container1;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0% 5% 0% auto;
+    }
+    .container2{
+        grid-area: container2;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0% 5% 0% auto;
+
+    }
+    .container3{
+        grid-area: container3;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0% 5% 0% auto;
+    }
+    .greatcontainer{
+        grid-area: greatcontainer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div>.boton1 ,div>.boton2 ,div>.boton3{
+        width: 85%;
+        margin:  0 auto;  
+        background: black;
+        height: 9%;
+        padding-left: 35%;
+    }
+    div>.boton4 ,div>.boton5{
+        width: 90%;
+        margin:  0 auto;  
+        margin-bottom: 3%;
+    }
+
+
+
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        background: black;
+        padding-left: 30%;
+    }
+    .menuFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    hr{
+        background: rgb(184, 183, 183);
+        height: 3px;
+        margin: 5% 10% 5% 10%;
+    }
+
+    /*Nosotros*/
+
+    .bodyN{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 600px 80px auto auto 150px;
+        gap: 5px;
+    
+        grid-template-areas: 
+        "header header"
+        "containerN1 containerN1"
+        "containerN2 containerN2"
+        "containerN3 containerN3"
+        "footer footer";
+    
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+    .containerN1,.containerN2,.containerN3{ 
+        margin: 0% 5% 0% 5%;
+    } 
+
+    /*CURSOS*/
+    .bodyC{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 600px 40px 1fr 1fr 1fr 150px;
+        gap: 5px;
+    
+        grid-template-areas: 
+        "header"
+        "title1"
+        "containerC1"
+        "containerC2"
+        "containerC3"
+        "footer";
+    }
+    .containerC1>div{
+        display: block;
+    }
+
+    .containerC1{
+        grid-area: containerC1;
+        display: block;
+    }
+    .containerC2>div{
+        display: block;
+    }
+    .containerC2{
+        grid-area: containerC2;
+        display: block;
+    }
+
+    .containerC3{
+        grid-area: containerC3;
+        display: block;
+    }
+
+    /*CONTACTO*/
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

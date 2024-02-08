@@ -1,0 +1,132 @@
+body{
+    background-image: url(../image/fondoverdelinea.png) ; /*fondo de la pagina*/
+}
+.html{
+    background-size: 100% 100%;   /*tamaño del background*/
+    width: 19%;
+    height: 40px;
+    display:inline-block;
+    background-image: url(../image/botonverde.png);
+    text-align: center;  /*alinear */
+    vertical-align:middle; /*alinear en el centro pero verticalmente*/
+}
+ a{
+    font-weight:800;
+    text-decoration: none; /*quitar decoracion de los enlaces*/
+    color: darkgreen;
+}
+div{ 
+    padding-bottom: 10px;
+    display:inline-block /*convertir de bloque a linea*/
+}
+header{
+    margin: 2% 7%;
+ }
+header img{
+    width: 100% ;
+    height: 250px;
+}
+.css{
+    background-size: 100% 100%;
+    width: 19%;
+    height: 40px;
+    display:inline-block;
+    background-image: url(../image/botonverde.png);
+    text-align: center;
+    vertical-align:middle;
+}
+.java{
+    background-size: 100% 100%;
+    width: 19%;
+    height: 40px;
+    display:inline-block;
+    background-image: url(../image/botonverde.png);
+    text-align: center;
+    vertical-align:middle;
+}
+.php{
+    background-size: 100% 100%;
+    width: 19%;
+    height: 40px;
+    display:inline-block;
+    background-image: url(../image/botonverde.png);
+    text-align: center;
+    vertical-align:middle;
+}
+.photo{
+    background-size: 100% 100%;
+    width: 19%;
+    height: 40px;
+    display:inline-block;
+    background-image: url(../image/botonverde.png);
+    text-align: center;
+    vertical-align:middle;
+}
+nav{
+    text-align: center;
+}
+h1{
+    font-size:larger;
+    font-weight: lighter;
+    color: darkgreen;
+    text-align: center;
+}
+.alumnos{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.bienvenida{
+    font-weight: lighter;
+    font-family:tahoma; 
+    margin-left: 7%;
+    width: 50%;
+    text-align:left;
+    color: darkgreen;
+}
+.bases button{
+    background: url(../image/botonverdeclarolargo.png);
+    background-size: 100% 100%;
+    font-weight:bold;
+    color: darkgreen;
+    font-family: tahoma;
+    border: none;
+    width: 100%;
+    height: 40px;
+}
+.bases{
+    text-align: center;
+    border: none;
+    width: 35%;
+}
+
+div.bases img{
+    width: 100%;
+    height: 150px;
+}
+
+.espacio{
+    color: darkgreen;
+    font-family: tahoma;
+    width: 30%;
+    text-align: center;
+}
+.espacio button{
+    background:url(../image/botonverdeclaro.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    color: darkgreen;
+}
+.espacio p{
+    text-align: left;
+}
+footer{
+    background-image:url(../image/barra_inferior.png);
+    background-size: 100% 100%;
+    margin:2% 7%;
+    color:darkgreen; 
+    text-align: right; 
+    font-family: tahoma;
+}

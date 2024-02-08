@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <script>
+
+        /**
+
+        Función que muestra un prompt para pedir un número al usuario.
+        @return {string} El número ingresado por el usuario en formato de string.
+        */
+        const pedirNumeros =() => prompt("Dime un numero");
+        /**
+
+        Función que suma dos números.
+        @param {number} numero1 - El primer número a sumar.
+        @param {number} numero2 - El segundo número a sumar.
+        @return {number} La suma de los dos números.
+        */
+        const sumarNumeros=(numero1,numero2)=>{
+            return numero1+numero2;
+        }
+
+        let numeros;
+        let suma=0;
+
+        // Bucle que pide números al usuario y los va sumando hasta que el usuario ingresa null.
+        do{
+            numeros=pedirNumeros();
+            if (numeros!=null){
+                if(isNaN(numeros)){
+                    alert("No es un numero")
+                }else{
+                    suma=sumarNumeros(suma,parseInt(numeros));
+                }
+            }
+        }while(numeros!=null);
+
+        // Muestra la suma total al usuario.
+        alert(suma);
+
+    </script>
+</body>
+</html>

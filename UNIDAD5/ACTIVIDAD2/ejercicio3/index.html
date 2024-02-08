@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+     * Función que concatena varias cadenas de texto separadas por guiones y las muestra en una alerta.
+     * @param {string} cadena - La primera cadena de texto a concatenar.
+     */
+        const cadenaTexto=cadena =>{
+            do{
+                cadena2=prompt("OTRA");
+                if(cadena2!=null){
+                    cadena=cadena+"-"+cadena2;
+                }
+            }while(cadena2!=null);
+
+            // Se muestra la cadena de texto resultante en una alerta.
+            alert(cadena);
+
+            // Se llama recursivamente a la función para concatenar más cadenas de texto.
+            cadenaTexto(cadena);
+        }
+
+        // Se solicita al usuario que introduzca una cadena de texto.
+        let cadena=prompt("Dime una cadena");
+
+        // Se llama a la función para concatenar cadenas de texto.
+        cadenaTexto(cadena);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <script>
+       
+
+        const esNumero=(numero1,numero2)=>{
+            return isNaN(numero1,numero2);
+        }
+    
+        let numero1=prompt("Dame un numero");
+        let numero2=prompt("dame otro");
+        
+        if(!esNumero(numero1,numero2)){
+            numero1=parseInt(numero1);
+            numero2=parseInt(numero2);
+
+            let resultado=numero1;
+
+            for(let i=1;i<numero2;i++){
+                esultado=resultado*numero1;
+            } alert(resultado);
+        } else{
+            alert("No es un numero");
+        }
+        
+    </script>
+</body>
+</html>

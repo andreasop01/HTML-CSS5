@@ -1,0 +1,83 @@
+/*Estilo para todo*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Grid*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 2% 5% 0% 5%;
+
+    grid-template-areas: 
+    "grid grid orange megafone"
+    "grid grid bike bug"
+    "food black game black2";
+}
+
+
+div>img{
+    width: 100%;
+    
+}
+h1{
+    font-size: 6em;
+}
+
+.grid{
+    grid-area: grid;
+    background: black;
+    color: white;
+    border-radius: 5%;
+}
+
+.orange{
+    grid-area: orange;
+    background: orange;
+    border-radius: 100%;
+}
+.megafone{
+    grid-area: megafone;
+    background: rgb(177, 177, 211);
+    border-radius: 100%;
+    padding: 20%;
+    
+}
+.bike{
+    grid-area: bike;
+    background: black;
+    border-radius: 100%;
+    padding: 20%;
+}
+.bug{
+    grid-area: bug;
+    border-radius: 100%;
+    background: rgb(177, 177, 211);
+    padding: 20%;
+}
+.food{
+    grid-area: food;
+    border-radius: 100%;
+    background: orange;
+    padding: 20%;
+}
+.black{
+    grid-area: black;
+    border-radius: 100%;
+    background: black;
+}
+.game{
+    grid-area: game;
+    border-radius: 100%;
+    background: rgb(177, 177, 211);
+    padding: 20%;
+}
+.black2{
+    grid-area: black2;
+    border-radius: 100%;
+    background: black;
+}

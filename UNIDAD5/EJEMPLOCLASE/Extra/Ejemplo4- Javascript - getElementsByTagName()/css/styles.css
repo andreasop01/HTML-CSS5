@@ -1,0 +1,14 @@
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 5px;
+	background-color: #EEE;
+	border: 1px solid #DDD;
+	margin-bottom: 5px;
+}
+
+  

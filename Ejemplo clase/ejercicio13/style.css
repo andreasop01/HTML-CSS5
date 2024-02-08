@@ -1,0 +1,34 @@
+.grid-container > * {
+    /*box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);*/
+    border:solid 1px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /** Plantilla del grid**/
+  .grid-container{
+    /*Ajustamos el ancho de las columnas: 1ª columna un ancho de 200px y la 2ª un ancho automático */
+    grid-template-columns: 200px auto ;
+    /*Ajustamos el alto de las columnas*/
+    grid-template-rows: 100px 50px auto 100px ;
+    display:grid;
+    gap:5px;
+  
+    grid-template-areas: 
+      "header header"
+      "navbar navbar"
+      "sidebar main"
+      "footer footer";
+      
+    /** También se puede hacer así, de manera resumida:
+
+    grid-template-areas: 
+        "header header" 100px
+        "navbar navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px / 
+        200px auto;
+    **/
+
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <script>
+        const swap=(arry,n1,n2)=>{
+            let guardar;
+            guardar=arry[n1];
+            arry[n1]=arry[n2];
+            arry[n2]=guardar;
+        }
+
+        let arr = [1,2,3];
+        let posicion1=parseInt(prompt("Dime posicion 1"));
+        let posicion2=parseInt(prompt("Dime posicion 2"));
+
+        swap(arr,posicion1,posicion2);
+        document.write(arr);
+
+    </script>
+</body>
+</html>

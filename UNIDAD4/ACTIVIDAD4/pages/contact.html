@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+    <nav><!--padre del indice, en este caso no cambia en ninguna pag-->
+        <header>
+            <div class="menu">
+                <ul>
+                    <li> <a href="../index.html"><strong class="colorBlack">Desing Agency</strong></a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li> <a href="../pages/ourWork.html">Our Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+    </nav>
+    <!--formuario con methos post-->
+    <form action="../php/formSend.php" method="post">
+        <h1>CONTACT US</h1>
+        <p>Name</p>
+        <input type="text" name="nombre"><br>
+        <p>Email</p>
+        <input type="email" name="email"><br>
+        <!--text area para message-->
+        <p>Message</p>
+        <textarea name="message"  cols="30" rows="10"></textarea><br>
+        <input class="enviar" type="submit" name="send" value="Send">
+    </form>
+    <footer>
+        <p>Pagina diseñada por Andrea</p> 
+        <img src="../img/twitter-icon.png" alt="twitter">
+        <img src="../img/facerbook-icon.png" alt="facebook">
+        <img src="../img/instagram-icon.png" alt="instragram">
+    </footer>
+</body>
+</html>

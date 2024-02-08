@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /**
+         * Función para clasificar una nota en una de las seis categorías posibles y mostrar un mensaje de alerta.
+         * @param {number} notas - La nota a clasificar.
+         */
+        const calificaciones=notas =>{
+            if(notas>=0 && notas<3){
+                alert("Muy deficiente")
+            }
+            if(notas>=3 && notas<5){
+                alert("Insuficiente")
+            }
+            if(notas==5){
+                alert("Suficiente")
+            }
+            if(notas==6){
+                alert("Bien")
+            }
+            if(notas>=7 && notas<9){
+                alert("notable")
+            }
+            if(notas>=9 && notas<=10){
+                alert("Sobresaliente")
+            }
+        }
+
+        // solicita al usuario que introduzca la nota.
+        let notas=parseInt(prompt("Dime tu nota"));
+
+        // clasifica la nota en una categoría y se muestra un mensaje de alerta.
+        calificaciones(notas);
+
+    </script>
+</body>
+</html>

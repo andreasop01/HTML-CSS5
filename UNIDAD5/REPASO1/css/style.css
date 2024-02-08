@@ -1,0 +1,273 @@
+/*Estilo para todo*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+.busca{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(56, 56, 56);
+    color: white;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+h1{
+    margin:1% 3%;
+    font-variant: small-caps;
+}
+h2{
+    font-variant: small-caps;
+}
+form{
+    margin: 1% 2% 1% 1%;
+}
+.menu1{
+    display: flex;
+    padding-left: 3%
+}
+.menu1>a{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    margin: 3%;
+
+}
+
+a>img{
+    width: 30px;
+    filter: grayscale(100%);
+    margin: 1%;
+}
+.imgMenu{
+    width: 24%;
+}
+
+
+
+/*container (grande)*/
+
+div.container{
+    display: flex;
+    justify-content: space-between;
+    border: solid grey 1px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.627);
+    margin:0% 4% ;
+}
+.container1{
+    width: 66%;
+    padding: 2% 2% 7% 2%;
+    font-size: 0.8em;
+}
+div.php{
+    background: rgb(246, 246, 210);
+    filter: drop-shadow(1px 1px 1px rgb(253, 252, 188));
+    padding: 3%;
+}
+.web{
+    padding: 8% 0% 0% 0%;
+}
+p>a{
+    text-decoration: none;
+    color: rgb(255, 166, 0);
+}
+
+/*NOTE*/
+.note{
+    display: grid;
+    grid-template-columns: 5% auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: solid rgba(177, 176, 176, 0.616) 1px;
+    margin: 2%;
+    padding: 1%;
+
+    grid-template-areas: 
+    "note1 note2"
+    "note1 note3"
+    "note1 note4"
+    "note1 note5"
+    "note1 note6"
+    "note1 note7"
+    "note1 note8"
+    "note1 note9";
+}
+
+.note1{
+    grid-area: note1;
+    line-height: 1.5em;
+}
+.note2{
+    grid-area: note2;
+    background: rgb(246, 246, 210);
+    border: white solid 1px;
+}
+
+.note3{
+    grid-area: note3;
+    background: rgb(246, 246, 210);
+    border: white solid 1px;
+    padding-left: 5%;
+}
+
+.note4{
+    grid-area: note4;
+    background: rgb(246, 246, 210);
+    padding-left: 5%;
+}
+.note5{
+    grid-area: note5;
+    background: rgb(246, 246, 210);
+    border: white solid 1px;
+    padding-left: 5%;
+}
+.note6{
+    grid-area: note6;
+    background: rgb(246, 246, 210);
+    border: white solid 1px;
+    padding-left: 5%;
+}
+.note7{
+    grid-area: note7;
+    background: rgb(246, 246, 210);
+    border: white solid 1px;
+    padding-left: 5%;
+}
+.note8{
+    grid-area: note8;
+    background: rgb(246, 246, 210);
+    border: white solid 1px;
+    padding-left: 5%;
+}
+.note9{
+    grid-area: note9;
+    background: rgb(246, 246, 210);
+    border: white solid 1px;
+    padding-left: 5%;
+}
+
+.comentario{
+    background: rgb(222, 219, 219);
+    color: rgb(93, 93, 93);
+    text-align: right;
+    height: 5%;
+    padding: 1%;
+}
+ /*Lista*/
+ .cascading{
+    padding: 10% 0% 3% 0%;
+ }
+ .lista{
+    display: flex;
+ }
+ .lista1{
+    width: 90%;
+    border: solid black 1px;
+    padding-left: 4%;
+ }
+ ol ol{
+    list-style-type: lower-latin;
+    padding-left: 3%;
+    font-size: 0.85em;
+ }
+
+ /*SPONSOR*/
+ .container2{
+    padding: 2% 4% 7% 1%;
+}
+ .sponsor{
+    display: flex;
+ }
+ .sponsor>div{
+    padding: 1%;
+ }
+
+/*ARTICULOS*/
+section.especial{
+    background:black;
+    color: white;
+    padding: 10px;
+    margin: 20px 0% 10px 0%;
+    font-size: 0.8em;
+}
+
+.articulos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3px;
+
+    grid-template-areas: 
+    "articulos1 articulos1"
+    "articulos2 articulos3"
+    "articulos4 articulos4"
+    "articulos5 articulos6";
+}
+.articulos1{
+    grid-area: articulos1;
+    
+}
+.articulos2{
+    grid-area: articulos2;
+   
+}
+.articulos3{
+    grid-area: articulos3;
+    
+}
+.articulos4{
+    grid-area: articulos4;
+}
+.articulos5{
+    grid-area: articulos5;
+}
+.articulos6{
+    grid-area: articulos6;
+}
+
+/*ARTICULOS*/
+.articulos>div>div>ul{
+    list-style-image: url(../images/li.gif);
+    padding-left: 14px;
+}
+.articulos>div>div>ul>li>a{
+    text-decoration: none;
+    color: rgb(93, 92, 92);
+}
+.articulos>div>div{
+    background: rgb(235, 234, 234);
+    border: solid white 1px;
+}
+
+
+/*FOOTER*/
+ footer>div{
+    display: flex;
+    justify-content:space-between ;
+    padding: 2% 15% 1% 13%;
+ }
+ footer>div>p>a{
+    text-decoration: none;
+    color: grey;
+ }
+ footer>p{
+    text-align: center;
+    color: grey;
+    margin-bottom: 3%;
+ }
+
+ /*****************************EFECTOS************************************/
+ a:hover{
+    color: orange;
+    text-decoration: underline;
+ }
+.articulos>div>div>ul>li>a:hover{
+    text-decoration: underline;
+}
+.imgMenu>a>img:hover{
+    filter: invert(0.4) sepia(.5) hue-rotate(30deg);
+}

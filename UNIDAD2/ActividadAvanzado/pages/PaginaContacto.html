@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>
+            Pagina de Contacto
+        </title>
+    </head>
+    <body>
+        <!--Inicio de la pagina-->
+        <header>
+            <h1>Mis Servicios</h1>
+        </header>   
+        <p> Si te quieres poner en contacto conmigo rellena el siguiente formuaria.</p>
+        <p>Los servicios que ofrezco son los siguientes:</p>
+         <!--Inicio de lista-->
+         <ul>
+             <li>Degollacion</li>
+            <li>Decapitacion</li>
+            <li>Renta de Verdugos</li>
+            <li>Juicios muy justos</li>
+        </ul>
+        <!--Inicio de formulario-->
+         <form action="../php/formularioEnviado.html" method="post">
+            <fieldset>
+                <legend>Pagina de Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombreText" value=""> &nbsp;
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidos" type="text" name="apellidoText" value=""><br><br>
+                <label for="DNI">DNI:</label>
+                <input id="DNI" type="text" name="DNITex" value="" required><br><br>
+                <label for="correo">Correo electronico</label>
+                <!--Required para campos obligatorios-->
+                <input id="correo" type="email" name="correoEmail" value="" required><br><br>
+                <strong>Opciones de servicio:</strong><br>
+                <label for="degollacion">Degollacion</label>
+                <input id="degollacion" type="checkbox" name="degollacionCheck" value="Degollacion"><br>
+                <label for="decapitacion">Decapitacion</label>
+                <input id="decapitacion" type="checkbox" name="decapitacionCheck" value="Decapitacion"><br>
+                <label for="verdugos">Renta de Verdugos</label>
+                <input id="verdugos" type="checkbox" name="verdugosCheck" value="verdugos"><br>
+                <label for="juicios">Juicios muy justos</label>
+                <input id="juicios" type="checkbox" name="juiciosCheck" value="juicios"><br><br>
+                <label for="especifica">Especifica lo que quieres:</label><br>
+                <textarea id="especifica" rows="10" cols="50"></textarea><br>
+                <input type="submit" value="Enviar"> &nbsp;
+                <input type="reset" value="Borrar datos">
+            </fieldset>
+        </form>
+        <!--Fin de formulario-->
+        <p>Demostracion de los Juicios justos.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hGV1VUVHtSo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <!--Pie de pagina-->
+        <footer>
+            <nav>
+                <a href="../index.html">Pagina de Inicio</a><br>
+                <a href="PaginaPresentacion.html">Pagina de Presentacion</a>
+            </nav>
+        </footer>
+    </body>
+</html>

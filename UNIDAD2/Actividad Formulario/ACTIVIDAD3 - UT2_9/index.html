@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Formulario de prueba de HTML5
+        </title>
+    </head>
+    <body>
+        <form action="php/insertar_cv.html" method="get"> <!--si lo dejo solo con comillas me da error, he decido anexarlo a una carpeta php-->
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" value=""><br><br>
+            <label for="correo">Correo electronico:</label>
+            <input id="correo" type="email" name="correo" value=""><br><br>
+            <label for="url">URL:</label>
+            <input id="url" type="url" name="url" placeholder="escribe la URL de tu pagina"><br> <br> <!--para que no me de error he sustituido value por placeholder-->
+            <label for="fecha">Fecha:</label>
+            <input id="fecha" type="date" name="fecha" value=""><br><br>
+            <label for="tiempo">Tiempo:</label>
+            <input id="tiempo" type="time" name="tiempo" value=""><br><br>
+            <label for="fechayhora">Fecha y hora:</label>
+            <input id="fechayhora" type="datetime-local" name="fechayhora" value=""><br><br> <!--al atributo datetime si lo dejo solo me da error hay que colocalre -local-->
+            <label for="mes">Mes:</label>
+            <input id="mes" type="month" name="mes" value=""><br><br>
+            <label for="semana">Semana:</label>
+            <input id="semana" type="week" name="semana" value=""><br><br>
+            <label for="numero">Número (min-10,max 10):</label>
+            <input id="numero" type="number" name="numero" min="-10" max="10" value="0"><br><br> <!--no coloco la etiqueta step por que no quiero que haga ningun salto de numero-->
+            <label for="telf">Telefono:</label>
+            <input id="telf" type="tel" name="telf" value=""><br><br>
+            <label for="busqueda">Termino de búsqueda:</label>
+            <input id="busqueda" type="search" name="busqueda"><br><br>
+            <label for="color">Color:</label>
+            <input id="color" type="color" name="color"><br><br>
+            <input type="submit" name="enviar" value="enviar">
+        </form>
+        
+    </body>
+</html>

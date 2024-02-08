@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculadora">
+        <!-- Botones del 0 al 9 y botones de punto y C -->
+        <input type="button" value="0" class="zero botones">
+        <input type="button" value="1" class="one botones">
+        <input type="button" value="2" class="two botones">
+        <input type="button" value="3" class="three botones">
+        <input type="button" value="4" class="four botones">
+        <input type="button" value="5" class="five botones">
+        <input type="button" value="6" class="six botones">
+        <input type="button" value="7" class="seven botones">
+        <input type="button" value="8" class="eight botones">
+        <input type="button" value="9" class="nine botones">
+        <input type="button" value="C" class="c botones">
+        <input type="button" value="." class="point botones">
+        
+        <!-- Pantalla de la calculadora -->
+        <input type="text" name="scre" id="screen" class="screen" readonly >
+        
+        <!-- Botones de operaciones matemáticas -->
+        <input type="button" value="/" class="barra operador">
+        <input type="button" value="*" class="estrella operador">
+        <input type="button" value="-" class="minus operador">
+        <input type="button" value="+" class="plus operador">
+        
+        <!-- Botón de igual -->
+        <input type="button" value="=" class="equals operador">
+    </div>
+
+    <!-- Archivo de script que maneja la funcionalidad de la calculadora -->
+    <script src="js/Script.js"></script>
+</body>
+</html>

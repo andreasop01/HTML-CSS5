@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+        let numeroDni=prompt(" Numero dni");
+        let letra=prompt("Letra")
+
+        if(numeroDni>0 && numeroDni<=99999999 ){
+            var letras =('T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T');
+            
+            if(letra==letras[numeroDni%23]){
+                alert("dni correcto")
+                console.log("dni correcto")
+
+            }else{
+                alert("letra erronea")
+                console.log("Letra erronea")
+            }
+        }else{
+            alert("El numero es erroneo");
+            console.log("El numero es erronea")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-image: url(../images/fondo1.jpg);
+    font-family: tahoma;
+}
+div{
+    background-image: url(../images/pinzas2.jpg);
+    background-size: 100% 100%;
+    margin: 2% 15%;
+    height: 100vh;
+    
+}
+img{
+    width: 20%;
+}
+p{
+    text-align: center;
+}
+footer{
+    background-color: rgba(255,255,255, 50%);
+    text-align: right;
+}
+header{
+    background-color: rgba(255,255,255, 50%);
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <script>
+        /**
+         * Función para comprobar si una persona es mayor o menor de edad y mostrar un mensaje de alerta.
+         * @param {number} edad - La edad de la persona.
+         */
+        const mayorMenor= edad =>{
+            if(edad>=18){
+                alert("Es mayor de edad, puede conducir")
+            }else{
+                alert("Es menor de edad, no puede conducir")
+            }
+        }
+
+        // Se solicita al usuario que introduzca la edad.
+        let edad=prompt("Dime la edad");
+
+        // Se comprueba si la persona es mayor o menor de edad y se muestra un mensaje de alerta.
+        mayorMenor(edad);
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@media(max-width:1000px){
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+    }
+    .logo{
+        display: inline-block;
+    }
+    .menu a{
+        display: flex;
+        justify-content: left;
+    }
+    .flexIzquierdo{
+        height: 100%;
+    }
+    div.container1{
+        width: 100%;
+        height: 100%;
+    }
+    div.container2{ 
+        display: none;
+    }
+    
+    
+}
+

@@ -1,0 +1,111 @@
+/*Estilo para todo*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Grid */
+html{
+    height: 100vh;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+
+    grid-template-areas: 
+    "text text text who bk1"
+    "bk2 clip about bk3 mail"
+    "bk4 bk4 mensaje bk5 bk5";
+}
+div>img{
+    width: 30%;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    grid-area: text;
+    background: black;
+    color: white;
+}
+.who{
+    grid-area: who;
+    background: rgb(55, 55, 241);
+    color: white;
+}
+.bk1{
+    grid-area: bk1;
+    background: url(../images/bk-1.jpg) center;
+    background-size: cover;
+}
+.bk2{
+    grid-area: bk2;
+    background: url(../images/bk-2.jpg)center;
+    background-size: cover;
+}
+.clip{
+    grid-area: clip;
+    background: rgb(26, 26, 86);
+    color: white;
+}
+.about{
+    grid-area: about;
+    background: rgb(129, 231, 231);
+    color: white;
+}
+.bk3{
+    grid-area: bk3;
+    background: url(../images/bk-3.jpg) center;
+    background-size: cover;
+}
+.mail{
+    grid-area: mail;
+    background: rgb(241, 168, 30);
+    color: white;
+}
+.bk4{
+    grid-area: bk4;
+    background: url(../images/bk-4.jpg) center;
+    background-size: cover;
+    color: white;
+    
+}
+.mensaje{
+    grid-area: mensaje;
+    background: rgb(57, 57, 171);
+    color: white;
+}
+.bk5{
+    grid-area: bk5;
+    background: url(../images/bk-5.jpg)center;
+    background-size: cover;
+    color: white;
+}
+
+@media(max-width: 850px){
+    body.body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11,200px);
+
+        grid-template-areas: 
+        "text"
+        "who"
+        "bk1"
+        "bk2"
+        "clip"
+        "about"
+        "bk3"
+        "mail"
+        "bk4"
+        "mensaje"
+        "bk5";
+
+    }
+}

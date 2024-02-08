@@ -1,0 +1,6 @@
+table, td, tr, th{
+    table-layout: fixed;
+    text-align: center;
+    border: solid black;
+    border-collapse: collapse;
+}

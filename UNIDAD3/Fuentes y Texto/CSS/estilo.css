@@ -1,0 +1,60 @@
+
+table, tr, th, td {border: solid 1px #000;}
+h1{
+    color: cadetblue;
+}
+/*poner negrita*/
+.rojito{
+    color: red;
+    font-weight: bold;
+}
+.amarillo{
+    
+    color: gold;
+}
+h2{
+    color: blue;
+}
+.rojosub{
+    color:red;
+    text-decoration:underline;
+}
+/*para subrayar en rojo el texto*/
+.azulsub{
+    color: blue;
+    text-decoration: red underline;
+}
+.morado{
+    color: darkmagenta;
+}
+caption{
+    color: blue;
+}
+thead{
+    color: gold;
+}
+.verde{
+    color:darkgreen;
+}
+/* he agregado div para agrupar todo los <p> en verde*/
+div.verama{
+    color: olive;
+}
+.rosa{
+    color:deeppink
+}
+.versub{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.blue {
+	background-color: blue;
+}

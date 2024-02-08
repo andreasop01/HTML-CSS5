@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <title>
+          Formulario de contacto  
+        </title>
+        <style>
+            body{font-size: 1.2em;
+             padding: 3%;
+             margin: 2%}
+            footer {
+             background-color: lightgrey;
+             margin-top: 5% }
+
+    </style>
+    </head>
+    <body>
+        <h1>Contacto</h1>
+        <form>
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+                <label for="name">Nombre(*)</label>
+                <input id="name" type="text" name="nombretext" value="" required><br><br>
+                <label for="email">Email(*)</label>
+                <input id="email" type="email" name="correoEmail" value="" required><br><br>
+                <label for="telf">Telefono</label>
+                <input id="telf" type="telf" name="TelefonoTelf" value="" ><br><br>
+                <label for="web">Sitio Web</label>
+                <input id="web" type="url" name="weburl" value=""><br><br>
+                <label for="asunto">Asunto(*)</label>
+                <input id="asunto" type="text" name="asuntotext" value="" required><br><br>
+                <label for="mensaje">Mensaje(*)</label>
+                <textarea id="mensaje" rows="2" cols="10" required></textarea><br><br>
+                <input type="submit" name="enviar" value="Enviar" >
+                <input type="reset" name="Borrar" value="Borrar todo" ><br><br>
+            </fieldset>
+        </form>
+        <a href="../index.html">Volver al index</a>
+    </body>
+    <footer>
+        <p><strong>Alumno: Andrea llovera De Sousa</strong></p>
+        <p>1º DAM</p>
+    </footer>
+</html>

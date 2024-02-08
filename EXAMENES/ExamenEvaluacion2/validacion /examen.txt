@@ -1,0 +1,12 @@
+He retocado 
+La sombra de las imágenes
+He terminado el formulario 
+Al media querin por fin pude redimensionarlo 
+Centre el footer 
+
+No pude juntar el main y me da mucha pena pero use un grid para posicionar todo 
+Aproveche de comentar cierta cosas en el html 
+
+En el css también trate de cometerar 
+
+Me apena no poder poner el main la página pero no quise perder tiempo 

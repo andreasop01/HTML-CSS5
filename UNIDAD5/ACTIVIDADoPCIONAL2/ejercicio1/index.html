@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercico1</title>
+</head>
+<body>
+    <script>
+        let array = [1,2,3,4,5,6];
+        let x=0;
+
+        while(x<array.length){
+            document.write(array[x]);
+            x++;
+        }
+        document.write("<br>");
+        //utilizando for
+
+        for(let i=0;i<array.length;i++){
+            document.write(array[i]);
+            
+        }
+        //for each
+        document.write("<br>");
+        for(p in array){
+            document.write(array[p]);
+        };
+        //for each 2
+        document.write("<br>");
+        for(t of array){
+            document.write(t);
+        };
+
+        //Mostrar todos los elementos dentro de un array sumándole uno a cada uno.
+        document.write("<br>");
+
+        for(o of array){
+            document.write(o+1);
+        }
+
+        //Generar una copia de un array pero con todos los elementos incrementado en 1.
+
+        document.write("<br>");
+         let copia= []
+         
+        for(g of array){
+           copia.push(g+1);
+        }
+        document.write(copia);
+
+        //Calcular el promedio
+        document.write("<br>");
+
+        let sum=0;
+        for(g of array){
+            sum+=g;
+        }
+        document.write(sum/array.length);
+
+        //Crear un array vacío, luego generar 20 números al azar y guardarlos en un array.
+        document.write("<br>");
+        
+        let vacio=[];
+
+        for(let i=0;i<20;i++){
+            vacio.push(Math.floor(Math.random()*100));
+        }
+        document.write(vacio);
+
+        //Crear un array vacío, luego generar N números al azar y guardarlos en un array, N es introducido por el usuario a través de un prompt.
+        document.write("<br>");
+
+        let vacio1=[];
+        let numero=parseInt(prompt("dame un numero"))
+
+        for(let i=0;i<numero;i++){
+            vacio1.push(Math.floor(Math.random()*100));
+        }
+        document.write(vacio1);
+
+        //Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "café", "rosa"] determinar si un color introducido por el usuario a través de un prompt se encuentra dentro del array o no.
+        document.write("<br>");
+
+        let colores=["azul", "amarillo", "rojo", "verde", "café", "rosa"] ;
+        let colors=prompt("dime un color");
+        let valido=false;
+
+        for(let i=0;i<colores.length;i++){
+
+            if(colores[i]==colors){
+                valido=true;
+
+            }
+        }
+       if(valido){
+        document.write(colors+" esta en el array");
+       }else{
+        document.write(colors+" no esta en el array");
+       }
+        
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Streaming con P@coP@co</h1>
+    </header>
+    <form action="../php/php.html" method="post">
+        <fieldset> <!--fomrulariop-->
+            <legend>Introduce tus datos personales</legend>
+            <label for="nombre">Nombre(*)</label>
+            <input id="nombre" type="text" name="nomText" value="" maxlength="5" required><br><br>
+            <label for="apellidos">Apellidos</label>
+            <input id="apellidos" type="text" name="apeText" value=""><br><br>
+            <label for="dni">DNI(*)</label>
+            <input id="dni" type="text" name="dniTex" value="" placeholder="25789658L" required maxlength="9"><br><br>
+            <label for="correo">Correo(*)</label>
+            <input id="correo" type="email" name="corrEmail" value="" required><br><br>
+            <label >Genero</label><br><br>
+            <label for="hombre">Hombre</label>
+            <input id="hombre" type="radio" name="rad" value="hombre">
+            <label for="mujer">Mujer</label>
+            <input id="mujer" type="radio" name="rad" value="mujer">
+            <label for="otro">Otro</label>
+            <input id="otro" type="radio" name="rad" value="otro"><br><br>
+            <label for="fecha">Fecha de nacimineto</label>
+            <input id="fecha" type="date" name="fechaDate" value="">
+        </fieldset>
+    </form>
+    <form action="../php/php.html" method="post">
+        <fieldset>
+            <legend> Informacion complemetaria</legend>
+            <label >Mensaje (*)</label><br>
+            <textarea rows="9" cols="15" required placeholder="deja aqui el motivo de tu mensaje"></textarea><br><br>
+            <label for="casilla">marca esta casilla si te pones en contacto con tu empre</label><br><br>
+            <input  id="casilla" type="checkbox" name=" chekbox" value="marca esta casilla si te pones en contacto con tu empres" ><br><br>
+            <label for="web">Enlace  TU PAGINA WEB</label><br>
+            <input id="web" type="url" name="web" value="" placeholder="http:..."><br><br>
+            <label for="image">manda una foto de tu mascota</label>
+            <input id="image" type="file" name="imagefilr">
+
+        </fieldset>
+    </form> <!--otro fomrulario-->
+    <form action="../php/php.html" method="post" >
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="borrar" value="Borrar Contenido">
+    </form>
+    <nav>
+        <a href="../index.html"> volver al index</a>
+    </nav>
+    <footer> <!--fin -->
+        <p>Autor de la web: Andrea Llovera </p>
+        <p>1ª DAM </p>
+    </footer>
+</body>
+</html>

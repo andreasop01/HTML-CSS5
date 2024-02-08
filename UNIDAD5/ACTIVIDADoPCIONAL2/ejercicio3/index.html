@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <script>
+        const suma=(arry)=>{
+            let suma=0;
+            for(i of arry ){
+                suma+=i;  
+            }
+            return suma;
+        }
+        let arr=[1,2,3];
+
+        document.write(suma(arr));
+
+        //Calcular el promedio de dicho array
+
+        document.write("<br>");
+
+        const promedio=arry=>{
+            let media=suma(arry)/arry.length;
+            return media;
+        }
+        document.write(promedio(arr));
+
+        //Encontrar el número más grande de ese array
+
+        document.write("<br>");
+
+        const mayor=arry=>{
+
+            let max=arry[0];
+
+            for(i of arry ){
+                if(i>max){
+                    max=i;
+                }
+            }
+            return max;
+        }
+
+        document.write(mayor(arr));
+        //Encontrar el número más pequeño de ese array
+
+        document.write("<br>");
+
+        const menor=arry=>{
+
+            let min=arry[0];
+
+            for(i of arry ){
+                if(i<min){
+                    min=i;
+                }
+            }
+            return min;
+        }
+
+        document.write(menor(arr));
+
+
+
+        
+
+    </scripT>
+</body>
+</html>

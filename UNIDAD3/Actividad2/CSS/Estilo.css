@@ -1,0 +1,52 @@
+body{
+    background-image: url("../imagenes/fondo.jpg"); /* fondo de la pagina*/
+    font-style: italic; /* cursiva*/
+    font-weight: bold;  /* nregrita*/
+    font-variant: small-caps; /* estilo de letra*/
+    color: lightslategrey; /* color de la fuente*/
+    text-align: center; /* centrar la letra*/
+}
+
+/*agrerle un a fuente diferente a la letra (titutlo)*/
+header{
+    background-color:rgb(245, 209, 215);
+    font-family: fuentePastel;
+    margin: 2% 10%;
+}
+
+/*Crear la fuente*/
+@font-face{
+    font-family: fuentePastel;
+    src:url("../fuentes/CandyCane.ttf")
+}
+
+.titulo{
+    padding: 10px 0px; /*hacer la caja mas grande separando el borde y el contenido*/
+    font-size: 5em ;
+}
+
+
+div{
+    background-color: rgb(245, 209, 215);
+    padding: 50px 50px 5px;
+    margin: 2% 10%; /* espacio entre fuera del borde y el contenido*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*redimensionar imagen */
+img{
+    height: 510px;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(245, 209, 215);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+    margin: 2% 10%;
+    padding: 2px;
+}
+
+.footer{
+    margin: 2px 10px;
+}
+

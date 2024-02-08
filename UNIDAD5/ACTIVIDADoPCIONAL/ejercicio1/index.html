@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <script>
+        var valores = [true, 5, false, "hola", "adios", 2];
+
+        const longitud = cadena =>{
+            return cadena.length;
+        };
+        const esString = valores =>{
+            return typeof valores == "string";
+        };
+
+        let mayor=0;
+        let valorMayor;
+
+        for(cad of valores){
+            if(esString(cad)){
+                if(longitud(cad)>mayor){
+                    mayor=longitud(cad);
+                    valorMayor=cad;
+                }
+
+            }
+        } alert(valorMayor);
+
+        const esBooleano = valores=>{
+            return typeof valores=="boolean";
+        }
+
+        for(bole of valores){
+            if(esBooleano(bole)){
+                if(bole){
+                    alert("Es correcto")
+                }else{
+                    alert("es falso")
+                }
+            }
+        }
+
+        const esNumero = valores =>{
+            return typeof valores=="number";
+        };
+
+        let numero1=0;
+        let numero2=0;
+
+        for(number of valores){
+            if(esNumero(number)){
+                if(numero1==0){
+                    numero1=number;
+                }else{
+                    numero2=number;
+                }
+            }
+        }
+        alert(numero1+numero2);
+        alert(numero1-numero2);
+        alert(numero1*numero2);
+        alert(numero1/numero2);
+        alert(Math.pow(numero1,numero2));
+    </script>
+</body>
+</html>
